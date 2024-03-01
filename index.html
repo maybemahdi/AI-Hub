@@ -39,7 +39,10 @@
           Sort By Date
         </button>
       </div>
-      <div id="card-container" class="grid grid-cols-1 lg:grid-cols-3 gap-5 my-7">
+      <div
+        id="card-container"
+        class="grid grid-cols-1 lg:grid-cols-3 gap-5 my-7"
+      >
         <!-- <div
           class="border text-card-foreground w-[350px] bg-white rounded-lg shadow-md overflow-hidden"
           data-v0-t="card"
@@ -99,13 +102,99 @@
         </div> -->
       </div>
       <div class="flex justify-center items-center">
-        <button id="see-more"
-        class="bg-[#EB5757] text-white font-bold transition-all duration-300 rounded-xl hover:bg-[#ed4f4f] text-base py-3 px-5"
-      >
-      See More
-      </button>
+        <button
+          id="see-more"
+          class="bg-[#EB5757] text-white font-bold transition-all duration-300 rounded-xl hover:bg-[#ed4f4f] text-base py-3 px-5 hidden"
+        >
+          See More
+        </button>
       </div>
+      <section id="details-popup" class="hidden">
+        <!-- <div
+          class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+        >
+          <div
+          class="flex w-[90%] md:w-[70%] h-[80%] flex-col lg:flex-row justify-between items-start bg-white p-10 rounded-lg"
+        >
+          <button
+            id="close-modal"
+            class="relative left-[100%] -mt-14 hover:bg-red-700 transition-all duration-300 bg-red-600 p-2 rounded-full"
+          >
+            <img src="./images/Frame.svg" alt="" />
+          </button>
+          <div class="max-w-md">
+            <h2 class="text-2xl font-bold mb-4">
+              ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT
+              technology to simulate human conversation.
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between mb-6">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
+              >
+                $10/month Basic
+              </button>
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
+              >
+                $50/month Pro
+              </button>
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
+              >
+                Contact us Enterprise
+              </button>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <h3 class="font-semibold mb-2">Features</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li>Customizable responses</li>
+                  <li>Multilingual support</li>
+                  <li>Seamless integration</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold mb-2">Integrations</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                  <li>FB Messenger</li>
+                  <li>Slack</li>
+                  <li>Telegram</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="max-w-sm mx-auto overflow-y-scroll md:overflow-hidden my-8 p-6 bg-white rounded-lg">
+            <div class="p-4 bg-[#fbfafa] rounded-lg">
+              <img
+                src="./images/Rectangle 15.png"
+                alt=""
+                class="w-full h-full mx-auto rounded-xl mb-4"
+                style="object-fit: cover"
+              />
+            </div>
+            <div class="px-6 bg-[#ffff] rounded-lg mb-4">
+              <h3 class="text-center text-lg font-semibold mb-2">
+                Hi, how are you doing today?
+              </h3>
+              <p class="text-center text-sm">
+                I'm doing well, thank you for asking. How can I assist you
+                today?
+              </p>
+            </div>
+          </div>
+        </div>
+        </div> -->
+      </section>
     </section>
+    <footer>
+      <div class="flex items-center justify-center mb-5 mt-14">
+        <p class="text-black font-medium">
+          All Right Reserved By
+          <span class="text-red-500 font-bold">Mahdi Hasan</span>
+        </p>
+      </div>
+    </footer>
     <script src="./js/app.js"></script>
   </body>
 </html>
