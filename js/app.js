@@ -101,7 +101,7 @@ const showDetails = (data) => {
           class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
         >
           <div
-          class="flex w-[90%] md:w-[70%] h-[90%] lg:h-[83%] flex-col lg:flex-row justify-between items-start bg-white p-10 rounded-lg"
+          class="flex w-[90%] md:w-[70%] h-full lg:h-[83%] flex-col lg:flex-row justify-between items-start bg-white p-10 rounded-lg"
         >
           <button
             id="close-modal"
