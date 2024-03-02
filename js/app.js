@@ -101,7 +101,7 @@ const showDetails = (data) => {
           class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
         >
           <div
-          class="flex w-[90%] md:w-[70%] h-full lg:h-[83%] flex-col lg:flex-row justify-between items-start bg-white p-10 rounded-lg"
+          class="flex w-[90%] md:w-[70%] h-[90%] lg:h-[75%] flex-col lg:flex-row justify-between items-start bg-white p-10 rounded-lg"
         >
           <button
             id="close-modal"
@@ -110,29 +110,29 @@ const showDetails = (data) => {
             <img src="./images/Frame.svg" alt="" />
           </button>
           <div class="max-w-md">
-            <h2 class="text-2xl font-bold mb-4">
+            <h2 class="lg:text-2xl text-[18px] font-bold mb-4">
               ${data.description}
             </h2>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between mb-6">
               <button
                 class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
               >
-                $10/month Basic
+                ${data.pricing[0].price}${data.pricing[0].plan}
               </button>
               <button
                 class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
               >
-                $50/month Pro
+              ${data.pricing[1].price}${data.pricing[1].plan}
               </button>
               <button
                 class="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 bg-[#f3f4f6] text-[#1f2937] py-2 px-2 rounded-md"
               >
-                Contact us Enterprise
+              ${data.pricing[2].price}/ ${data.pricing[2].plan}
               </button>
             </div>
             <div class="grid grid-cols-2 gap-4">
               <div>
-                <h3 class="font-semibold mb-2">Features</h3>
+                <h3 class="font-semibold">Features</h3>
                 <ul class="list-disc pl-5 space-y-1">
                   <li>${data.features[1].feature_name}</li>
                   <li>${data.features[2].feature_name}</li>
@@ -140,17 +140,17 @@ const showDetails = (data) => {
                 </ul>
               </div>
               <div>
-                <h3 class="font-semibold mb-2">Integrations</h3>
+                <h3 class="font-semibold">Integrations</h3>
                 <ul class="list-disc pl-5 space-y-1">
-                  <li>FB Messenger</li>
-                  <li>Slack</li>
-                  <li>Telegram</li>
+                  <li>${data.integrations[0]}</li>
+                  <li>${data.integrations[1]}</li>
+                  <li>${data.integrations[2]}</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <div class="max-w-sm mx-auto my-8 px-6 bg-white rounded-lg overflow-none">
+          <div class="max-w-sm mx-auto my-2 px-6 bg-white rounded-lg overflow-auto">
             <div class="p-4 bg-[#fbfafa] rounded-lg">
               <img
                 src="${data.image_link[0]}"
